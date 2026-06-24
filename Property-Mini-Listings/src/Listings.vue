@@ -19,7 +19,8 @@ export default {
           id: 1,
           title: 'Observatory Apartment',
           location: '10 William Street, Observatory',
-          price: 2650000,
+          price: 10000,
+          period: 'month',
           type: 'House',
           size: '180m²',
           bedrooms: 2,
@@ -105,7 +106,6 @@ export default {
           available: true,
           isBookmarked: false
         },
-
         {
           id: 6,
           title: '2 Bedroom Townhouse in Vredenburg',
@@ -142,12 +142,12 @@ export default {
           available: true,
           isBookmarked: false
         },
-
         {
           id: 8,
           title: '2 Bedroom Apartment in Sea Point, Cape Town',
           location: '702 onehundredonm, 100 main road',
-          price: 12995000,
+          price: 15000,
+          period: 'month',
           type: 'Apartment',
           size: '104m²',
           bedrooms: 2,
@@ -161,12 +161,12 @@ export default {
           available: false,
           isBookmarked: false
         },
-
         {
           id: 9,
           title: '1 Bedroom Apartment in Sea Point',
           location: '146 main road',
-          price: 4450000,
+          price: 8000,
+          period: 'month',
           type: 'Apartment',
           size: '44m²',
           bedrooms: 1,
@@ -180,12 +180,12 @@ export default {
           available: true,
           isBookmarked: false
         },
-
         {
           id: 10,
           title: '2 Bedroom Apartment in Brackenfell Central',
           location: '1 simonsberg, 40 fairview crescent',
-          price: 1595000,
+          price: 8500,
+          period: 'month',
           type: 'Apartment',
           size: '70m²',
           bedrooms: 2,

@@ -40,14 +40,18 @@
       </div>
 
       <div class="card-footer">
-        <span class="price">R {{ formatPrice(property.price) }}</span>
+        <div class="price-container">
+          <span class="price">R {{ formatPrice(property.price) }}</span>
+          <span v-if="property.period" class="price-period">/ {{ property.period }}</span>
+        </div>
         
         <button 
           @click="toggleBookmark"
           class="btn-bookmark"
           :class="{ 'is-active': property.isBookmarked }"
         >
-          {{ property.isBookmarked ? '★ Favourited' : '☆ Favourite' }}
+          <span class="star" :class="property.isBookmarked ? 'favourited' : 'empty'"></span>
+          {{ property.isBookmarked ? 'Favourited' : 'Favourite' }}
         </button>
       </div>
     </div>
@@ -284,10 +288,22 @@ export default {
   padding-top: 16px;
 }
 
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .price {
   font-weight: 700;
   font-size: 16px;
   color: #1e293b;
+}
+
+.price-period {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: -2px;
 }
 
 .btn-bookmark {
@@ -313,4 +329,20 @@ export default {
   color: #14b8a6;
   font-weight: 600;
 }
+
+.star {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.star.empty::before {
+  content: "☆";
+}
+
+.star.favourited::before {
+  content: "★";
+}
+
 </style>
