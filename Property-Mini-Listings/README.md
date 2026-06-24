@@ -1,38 +1,58 @@
-# Property-Mini-Listings
+# Zesty Homes - Property Mini-Listings
 
-This template should help get you started developing with Vue 3 in Vite.
+A stunning, lightweight single-page property exploration web prototype built with **Vue.js**. This project focuses on a premium user experience with smooth animations, interactive features, and a clean, modern aesthetic.
 
-## Recommended IDE Setup
+## 🛠️ Tech Stack
+- **Framework**: Vue.js
+- **Styling**: CSS
+- **Build Tool**: Vue
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Project Structure
+- `App.vue`: The main application orchestrator and state holder.
+- `AppHeader.vue`: Elegant header showcasing the total live listings.
+- `FilterBar.vue`: Search and sorting controls with real-time updates.
+- `PropertyGrid.vue`: The container for the dynamic property layout.
+- `PropertyCard.vue`: The hero component featuring the image slider and property details.
+- `main.css`: Global styling tokens and layout utilities.
 
-## Recommended Browser Setup
+## ✨ Features Implemented
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Dynamic Property Grid**: Responsive layout that scales beautifully across all devices.
+- **Advanced Filtering**: Real-time search by title or location with instant feedback.
+- **Numerical Sorting**: Accurate price sorting (low-to-high / high-to-low).
+- **Interactive Image Slider**: Hover-interactive carousel for each property with indicator dots.
+- **Availability Tracking**: Clear visual badges for "Available" vs "Sold / Rented" properties.
+- **Favouriting System**: Simple toggle to bookmark properties of interest.
 
-## Customize configuration
+## 📸 Screenshots
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- ![Main View](https://i.ibb.co/Rk58WRxN/Screenshot-2026-06-24-151709.png)
 
-## Project Setup
+- ![Filtering](https://i.ibb.co/nNCV1rS8/Screenshot-2026-06-24-151727.png)
 
-```sh
-npm install
-```
+- ![Card Features](https://i.ibb.co/R4tYyg5q/Screenshot-2026-06-24-151813.png)
 
-### Compile and Hot-Reload for Development
+## 🚀 Project Setup
 
-```sh
-npm run dev
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/KrishendreeX/Property-Mini-Listings.git
+   ```
 
-### Compile and Minify for Production
+2. **Navigate to the project directory**:
+   ```bash
+   cd Property-Mini-Listings
+   ```
 
-```sh
-npm run build
-```
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+---
+Created with Love for Zesty Homes.
