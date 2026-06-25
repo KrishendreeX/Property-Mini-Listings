@@ -32,9 +32,12 @@ export default {
 
 .brand-title {
   font-size: 34px;
-  color: #1e293b;
   font-weight: 800;
   letter-spacing: -0.5px;
+  padding: 16px;
+  border-radius: 12px;
+  color: #0f172a; 
+  background: linear-gradient(to right, #ccfbf1, #f0fdfa); 
 }
 
 .counter-badge {
@@ -61,4 +64,4 @@ export default {
   border-radius: 20px;
   font-size: 0.9rem;
 }
-</style>
+</style> 

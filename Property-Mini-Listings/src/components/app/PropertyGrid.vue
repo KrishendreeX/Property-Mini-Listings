@@ -9,7 +9,7 @@
     </div>
     
     <div v-else class="empty-state-card">
-      <div class="icon">🏡</div>
+      <div class="icon"></div>
       <h3>No Properties Match Your Search</h3>
       <p>Try modifying your location or keyword search keywords.</p>
     </div>

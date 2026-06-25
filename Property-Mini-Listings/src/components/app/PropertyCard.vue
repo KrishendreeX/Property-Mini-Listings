@@ -4,8 +4,8 @@
       <img :src="property.images[currentImageIndex]" :alt="property.title" class="property-image" />
       
       <div v-if="property.images && property.images.length > 1" class="image-nav">
-        <button @click="prevImage" class="nav-btn prev" aria-label="Previous Image">❮</button>
-        <button @click="nextImage" class="nav-btn next" aria-label="Next Image">❯</button>
+        <button @click="prevImage" class="nav-btn prev" aria-label="Previous Image"><</button>
+        <button @click="nextImage" class="nav-btn next" aria-label="Next Image">></button>
         
         <div class="image-dots">
           <span 
@@ -31,7 +31,7 @@
         <h3>{{ property.title }}</h3>
       </div>
       
-      <p class="location">📍 {{ property.location }}</p>
+      <p class="location"> {{ property.location }}</p>
       
       <div class="specs-bar">
         <span v-if="property.bedrooms">{{ property.bedrooms }} Beds</span>

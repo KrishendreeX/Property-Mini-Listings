@@ -3,13 +3,13 @@ import './main.css'
 
 import { createApp } from 'vue'
 
-import App from './App.vue'
-import router from './router'
+import App from './components/app/App.vue'
+
 import store from './stores'
 
 const app = createApp(App)
 
 app.use(store)
-app.use(router)
+
 
 app.mount('#app')
